@@ -6,7 +6,7 @@ This project combines four CRM datasets to evaluate sales outcomes across produc
 
 **[Explore the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/zihan.chen5501/viz/B2BSalesPipeline/B2BSalesPipelinePerformanceDashboard)**
 
-![B2B Sales Pipeline Performance Dashboard with five KPIs and product, regional, sector, and sales-rep charts](images/dashboard.png)
+![B2B Sales Pipeline Performance Dashboard with five KPIs and product, regional, sector, and sales-rep charts](image/dashboard.png)
 
 ## Business problem
 
@@ -14,7 +14,7 @@ Which parts of a B2B sales pipeline contribute the most closed-won value? A valu
 
 ## Data and relationships
 
-The source is Maven Analytics' [CRM Sales Opportunities dataset](https://mavenanalytics.io/data-playground/crm-sales-opportunities), describing a fictitious computer-hardware company. The four source files are available in [`dataset/`](dataset/), alongside a [data dictionary](dataset/data_dictionary.csv) and the [Tableau-ready export](dataset/sales_analysis_view.csv).
+The source is Maven Analytics' [CRM Sales Opportunities dataset](https://mavenanalytics.io/data-playground/crm-sales-opportunities), describing a fictitious computer-hardware company. The four source files are available in [`dataset/`](https://github.com/zihanc1217/B2B-Sales-Pipeline-/tree/main/dataset), alongside a [data dictionary](dataset/data_dictionary.csv) and the [Tableau-ready export](dataset/sales_analysis_view.csv).
 
 | Table | Grain | Relationship to `sales_pipeline` |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ The [interactive dashboard](https://public.tableau.com/app/profile/zihan.chen550
 
 ## SQL files
 
-The scripts in [`sql/`](sql/) document the actual analysis. They are query files, not a one-click automated ETL pipeline. Import the source CSVs before running queries that refer to their tables.
+The scripts in [`sql/`](https://github.com/zihanc1217/B2B-Sales-Pipeline-/tree/main/sql) document the actual analysis. They are query files, not a one-click automated ETL pipeline. Import the source CSVs before running queries that refer to their tables.
 
 | File | What it covers |
 | --- | --- |
@@ -79,6 +79,7 @@ The work demonstrates MySQL `JOIN`, `GROUP BY`, `CASE WHEN`, CTEs, `RANK() OVER`
 ```text
 B2B-Sales-Pipeline-/
 ├── README.md
+├── project_report.md
 ├── dataset/
 │   ├── accounts.csv
 │   ├── data_dictionary.csv
@@ -86,7 +87,7 @@ B2B-Sales-Pipeline-/
 │   ├── sales_analysis_view.csv
 │   ├── sales_pipeline.csv
 │   └── sales_teams.csv
-├── images/
+├── image/
 │   └── dashboard.png
 └── sql/
     ├── Database.sql
